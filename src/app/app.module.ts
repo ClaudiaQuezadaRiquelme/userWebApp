@@ -11,6 +11,11 @@ import { InitComponent } from './components/init/init.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +29,9 @@ import { CardContainerComponent } from './components/card-container/card-contain
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+ 	  AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
