@@ -14,6 +14,7 @@ describe('AppComponent', () => {
     }).compileComponents();
   }));
 
+  // Default testing
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
@@ -32,4 +33,11 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('userWebApp app is running!');
   });
+
+  // Our testing
+  it('should have router-outlet', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    expect(fixture.nativeElement.querySelector('router-outlet')).not.toBeNull();
+  });
+
 });
