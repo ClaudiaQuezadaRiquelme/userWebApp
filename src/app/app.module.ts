@@ -23,6 +23,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 // Auth service
 import { AuthService } from './services/auth.service';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AuthService } from './services/auth.service';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
