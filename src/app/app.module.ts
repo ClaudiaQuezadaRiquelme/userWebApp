@@ -1,7 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+
+// Components
 import { AppComponent } from './app.component';
 import { InfoComponent } from './components/info/info.component';
 import { CardComponent } from './components/card/card.component';
@@ -10,11 +16,13 @@ import { LoginComponent } from './components/login/login.component';
 import { InitComponent } from './components/init/init.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { environment } from '../environments/environment';
-
+// Auth service
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -25,15 +33,22 @@ import { environment } from '../environments/environment';
     LoginComponent,
     InitComponent,
     HeaderComponent,
-    CardContainerComponent
+    CardContainerComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
- 	  AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
