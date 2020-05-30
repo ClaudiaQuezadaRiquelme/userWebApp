@@ -1,9 +1,17 @@
 <h3>Sign In</h3>
-<form>
-  <input #userName type="email" placeholder="your email" required>
-  <input #userPassword type="password" placeholder="your password" required>
-  <button type="submit">Sign in</button>
-  <!-- <button type="submit" (click)="authService.SignIn(userName.value, userPassword.value)">Sign in</button> -->
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input #userName id="userName" type="email" placeholder="your email" required>
+  <input #userPassword id="userPassword" type="password" placeholder="your password" required>
+  
+  <span *ngIf="submitted && form.controls.email.invalid" id="email-error">
+    Please enter a valid email.
+  </span>
+  <span *ngIf="submitted && form.controls.password.invalid" id="password-error">
+    Please enter a valid password.
+  </span>
+
+  <button type="submit" (click)="authService.SignIn(userName.value, userPassword.value)">Sign in</button>
+  
 </form>
 
 
