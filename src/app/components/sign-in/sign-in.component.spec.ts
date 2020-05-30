@@ -106,7 +106,7 @@ describe('SignInComponent', () => {
     expect(elements.querySelector('#password-error')).toBeFalsy();
 
     elements.querySelector('button').click();
- 
+
     fixture.detectChanges();
     expect(elements.querySelector('#password-error')).toBeTruthy();
     expect(elements.querySelector('#password-error').textContent).toContain(

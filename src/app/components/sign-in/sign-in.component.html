@@ -1,7 +1,14 @@
-<h3>Sign In</h3>
+<h4>LogIn</h4>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <input #userName id="userName" type="email" placeholder="your email" required>
-  <input #userPassword id="userPassword" type="password" placeholder="your password" required>
+  <!-- Calling GoogleAuth Api from AuthService -->
+  <button type="button" class="btn btn-info btn-lg btn-block" (click)="authService.GoogleAuth()">
+    Google
+  </button>
+  <button type="button" class="btn btn-info btn-lg btn-block disabled">
+    Facebook
+  </button>
+  <input #userName id="userName" type="email" class="form-control" placeholder="your email" required>
+  <input #userPassword id="userPassword" type="password" class="form-control" placeholder="your password" required>
   
   <span *ngIf="submitted && form.controls.email.invalid" id="email-error">
     Please enter a valid email.
@@ -10,8 +17,18 @@
     Please enter a valid password.
   </span>
 
-  <button type="submit" (click)="authService.SignIn(userName.value, userPassword.value)">Sign in</button>
-  
+  <button type="submit" class="btn-primary btn-lg btn-block" (click)="authService.SignIn(userName.value, userPassword.value)">
+    Log in
+  </button>
+  <div class="redirectToLogin">
+    <button class="redirect btn-primary btn-lg btn-block" routerLink="/register-user">
+      Sign Up
+    </button>
+  </div>
+
+  <div class="forgotPassword text-info">
+    <span routerLink="/forgot-password">Forgot Password?</span>
+  </div>
 </form>
 
 

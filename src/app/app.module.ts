@@ -25,6 +25,9 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { AuthService } from './services/auth.service';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
+// Forms
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +49,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     AuthService
