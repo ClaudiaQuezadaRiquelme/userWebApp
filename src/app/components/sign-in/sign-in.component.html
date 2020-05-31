@@ -1,4 +1,4 @@
-<h4>LogIn</h4>
+<h4 class="text-center">LogIn</h4>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <!-- Calling GoogleAuth Api from AuthService -->
   <button type="button" class="btn btn-info btn-lg btn-block" (click)="authService.GoogleAuth()">
@@ -7,7 +7,7 @@
   <button type="button" class="btn btn-info btn-lg btn-block disabled">
     Facebook
   </button>
-  
+
   <input #userName id="userName" type="email" class="form-control" placeholder="your email" required>
   <input #userPassword id="userPassword" type="password" class="form-control" placeholder="your password" required>
   

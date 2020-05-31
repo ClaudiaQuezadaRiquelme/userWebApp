@@ -1,4 +1,4 @@
-<h4>Sign Up</h4>
+<h4 class="text-center">Sign Up</h4>
 
 <input #userEmail type="email" class="form-control" placeholder="your email" required>
 <input #userPassword type="password" class="form-control" placeholder="your password" required>
@@ -7,7 +7,7 @@
   Sign Up
 </button>
   
-<p class="or">Or</p>
+<p class="text-center">Or</p>
   
 <!-- Continue with Google -->
 <button type="button" class="btn btn-info btn-lg btn-block" (click)="authService.GoogleAuth()">
@@ -20,5 +20,5 @@
 </button>
   
 <div class="redirectToLogin">
-  <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+  <span>Already have an account? <span class="redirect text-info" routerLink="/sign-in">Log In</span></span>
 </div>
