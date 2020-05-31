@@ -1,0 +1,12 @@
+.userConected {
+    display: none;
+}
+.uwaTitleImg {
+    /* center img */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* responsive img */
+    max-width: 100%;
+    height: auto;
+}
