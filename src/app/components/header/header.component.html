@@ -1,4 +1,12 @@
 <header>
-    <img class="uwaTitleImg" src="../assets/userWebAppTitle.svg" alt="User Web App Title">
-    <div class="userConected"></div>
+    <img class="uwaTitleImg" src="../assets/userWebAppTitle.svg" alt="User Web App Title" [style.margin-left]=
+        "router.url === '/card-container' ? 'unset' : 'auto'"
+               [style.margin-right]=
+        "router.url === '/card-container' ? 'unset' : 'auto'">
+    <div *ngIf="router.url === '/card-container'" class="userConected">
+        holiholigoligajkfhkasjdfhkjsdfhkajdfhkasjdfhkjsdfh
+        ksjdfhkjsdfhkasjdddfhkjsdhfkjsdfhkjs
+        dfhkajsdhfkjasdhfkjasdhfkjsdhfkjsadfhkjsadfh
+        ksjdfhksjdfhksajdfhksdjfhksadjfhksdjfh
+    </div>
 </header>
