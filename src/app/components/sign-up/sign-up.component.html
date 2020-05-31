@@ -1,46 +1,24 @@
-<div class="displayTable">
-    <div class="displayTableCell">
+<h4>Sign Up</h4>
+
+<input #userEmail type="email" class="form-control" placeholder="your email" required>
+<input #userPassword type="password" class="form-control" placeholder="your password" required>
+
+<button type="button" class="btn-primary btn-lg btn-block" (click)="authService.SignUp(userEmail.value, userPassword.value)">
+  Sign Up
+</button>
   
-      <div class="authBlock">
-        <h3>Sign Up</h3>
+<p class="or">Or</p>
   
-        <div class="formGroup">
-          <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
-        </div>
+<!-- Continue with Google -->
+<button type="button" class="btn btn-info btn-lg btn-block" (click)="authService.GoogleAuth()">
+  Continue with Google
+</button>
   
-        <div class="formGroup">
-          <input type="password" class="formControl" placeholder="Password" #userPwd required>
-        </div>
+<!-- Continue with Facebook -->
+<button type="button" class="btn btn-info btn-lg btn-block disabled">
+  Continue with Facebook
+</button>
   
-        <div class="formGroup">
-          <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
-        </div>
-  
-        <div class="formGroup">
-          <span class="or"><span class="orInner">Or</span></span>
-        </div>
-  
-        <!-- Continue with Google -->
-        <div class="formGroup">
-          <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-            <i class="fab fa-google-plus-g"></i>
-            Continue with Google
-          </button>
-        </div>
-  
-        <!-- Continue with Facebook -->
-        <div class="formGroup">
-          <button type="button" class="btn facebookBtn">
-          <!-- <button type="button" class="btn facebookBtn" (click)="authService.FacebookAuth()"> -->
-            <i class="fab fa-facebook"></i>
-            Continue with Facebook
-          </button>
-        </div>
-      </div>
-  
-      <div class="redirectToLogin">
-        <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span>
-      </div>
-    </div>
-  
-  </div>
+<div class="redirectToLogin">
+  <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span>
+</div>
