@@ -2,11 +2,10 @@
     <img class="uwaTitleImg" src="../assets/userWebAppTitle.svg" alt="User Web App Title" [style.margin-left]=
         "router.url === '/card-container' ? 'unset' : 'auto'"
                [style.margin-right]=
-        "router.url === '/card-container' ? 'unset' : 'auto'">
+        "router.url === '/card-container' ? 'unset' : 'auto'"
+               [style.display]=
+        "router.url === '/card-container' ? 'inline-block' : 'block'">
     <div *ngIf="router.url === '/card-container'" class="userConected">
-        holiholigoligajkfhkasjdfhkjsdfhkajdfhkasjdfhkjsdfh
-        ksjdfhkjsdfhkasjdddfhkjsdhfkjsdfhkjs
-        dfhkajsdhfkjasdhfkjasdhfkjsdhfkjsadfhkjsadfh
-        ksjdfhksjdfhksajdfhksdjfhksadjfhksdjfh
+        <app-user></app-user>
     </div>
 </header>

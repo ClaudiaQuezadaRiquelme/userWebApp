@@ -1,5 +1,6 @@
 .userConected {
-    
+    display: inline-block;
+    float: right;
 }
 .uwaTitleImg {
     /* center img */
