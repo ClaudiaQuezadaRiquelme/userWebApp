@@ -6,20 +6,21 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
+import { CardContainerComponent } from './components/card-container/card-container.component';
 
 import { AuthGuardGuard } from './services/auth-guard.guard';
+import { from } from 'rxjs';
 
 const routes: Routes = [{
   path: '',
   loadChildren: () => import('./components/sign-in/sign-in.module').then(m => m.SignInModule),
   data: { preload: true }
 },
-  // { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
-  // { path: 'sign-in', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuardGuard] },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'verify-email-address', component: VerifyEmailComponent }
+  { path: 'verify-email-address', component: VerifyEmailComponent },
+  { path: 'card-container', component: CardContainerComponent }
 ];
 
 @NgModule({
