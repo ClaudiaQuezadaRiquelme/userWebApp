@@ -17,9 +17,6 @@ export class CardContainerComponent implements OnInit {
     this.service.getUsers().subscribe(data => {
       this.usersData = data.results;
       console.log(this.usersData);
-      this.usersData.forEach(element => {
-        console.log(element);
-      });
     });
   }
 

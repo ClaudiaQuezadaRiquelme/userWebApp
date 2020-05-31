@@ -20,7 +20,7 @@ const routes: Routes = [{
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuardGuard] },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
-  { path: 'card-container', component: CardContainerComponent }
+  { path: 'card-container', component: CardContainerComponent, canActivate: [AuthGuardGuard] }
 ];
 
 @NgModule({
