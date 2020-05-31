@@ -1,1 +1,8 @@
-<p>card-container works!</p>
+<div *ngIf="usersData">
+    <div *ngFor="let user of usersData">
+        <app-card>
+            <img cardImg src="../../../assets/UserImg.svg" alt="somebody img">
+            <h5 cardName>{{user.name.last}} {{user.name.first}}</h5>
+        </app-card>
+    </div>
+</div>
