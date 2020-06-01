@@ -2,6 +2,16 @@
     flex-grow: 1;
     flex-shrink: 0;
 }
+.card-body {
+    text-align: center;
+    padding: unset;
+    margin: unset;
+    max-width: 90px;
+    min-height: 140px;
+}
+.card-img {
+    width: 90px;
+}
 .modalImg {
     vertical-align: top;
 }

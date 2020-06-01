@@ -1,6 +1,6 @@
 <div class="randomUserCard card border-secondary mb-3" (click)="openModal(template)">
     <div class="card-body">
-      <ng-content select="[cardImg]"></ng-content>
+      <ng-content class="card-img" select="[cardImg]"></ng-content>
       <ng-content select="[cardName]"></ng-content>
     </div>
 </div>
