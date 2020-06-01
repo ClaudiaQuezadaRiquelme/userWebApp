@@ -1,13 +1,14 @@
-.userConected {
-    display: inline-block;
-    float: right;
-}
 .uwaTitleImg {
     /* center img */
     display: block;
     margin-left: auto;
     margin-right: auto;
     /* responsive img */
-    max-width: 100%;
+    max-width: 65%;
     height: auto;
+}
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }

@@ -1,11 +1,18 @@
 <header>
-    <img class="uwaTitleImg" src="../assets/userWebAppTitle.svg" alt="User Web App Title" [style.margin-left]=
+    <img *ngIf="router.url !== '/card-container'" class="uwaTitleImg" src="../assets/userWebAppTitle.svg" alt="User Web App Title" 
+               [style.margin-left]=
         "router.url === '/card-container' ? 'unset' : 'auto'"
                [style.margin-right]=
         "router.url === '/card-container' ? 'unset' : 'auto'"
                [style.display]=
         "router.url === '/card-container' ? 'inline-block' : 'block'">
-    <div *ngIf="router.url === '/card-container'" class="userConected">
+
+    <div *ngIf="router.url === '/card-container'" class="container-header">
+        <img class="uwaTitleImg" src="../assets/userWebAppTitle.svg" alt="User Web App Title" [style.margin-left]="'unset'"
+                       [style.margin-right]="'unset'"
+                       [style.display]="'block'">
+        
         <app-user></app-user>
+        
     </div>
 </header>
