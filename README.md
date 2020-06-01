@@ -33,3 +33,11 @@ Se utilizó [Bootswatch sketchy](https://bootswatch.com/sketchy/) para la estét
 ### Flujo de la App a través del Mockup
 
 <img src="https://raw.githubusercontent.com/ClaudiaQuezadaRiquelme/userWebApp/master/src/assets/UserWebAppMockup-video.gif" width="600" height="400" />
+
+## Despliegue de la App en Firebase
+
+Teniendo en cuenta que ya fue creado un proyecto en Firebase debido a que se implementó la autenticación, el paso siguiente es asegurarse que tengamos las herramientas globales para iniciar el despliegue:
+
+`npm install -g firebase-tools`
+'npm install -g firebase-tools'
+´npm install -g firebase-tools´
