@@ -1,6 +1,27 @@
-<div class="card border-secondary mb-3">
+<div class="randomUserCard card border-secondary mb-3" (click)="openModal(template)">
     <div class="card-body">
       <ng-content select="[cardImg]"></ng-content>
       <ng-content select="[cardName]"></ng-content>
     </div>
 </div>
+
+<!-- Ng-Template Modal -->
+<ng-template #template>
+  <div class="modal-header">
+
+  <!-- Modal Title  -->
+    <h4 class="modal-title pull-left">Modal</h4>
+
+  <!-- Close Button  -->
+    <button type="button" 
+        class="close pull-right" 
+        (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <!-- Modal Body -->
+  <div class="modal-body">
+    This is a modal.
+  </div>
+</ng-template>

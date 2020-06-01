@@ -10,10 +10,8 @@ import { environment } from '../environments/environment';
 
 // Components
 import { AppComponent } from './app.component';
-import { InfoComponent } from './components/info/info.component';
 import { CardComponent } from './components/card/card.component';
 import { UserComponent } from './components/user/user.component';
-import { InitComponent } from './components/init/init.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CardContainerComponent } from './components/card-container/card-container.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
@@ -32,13 +30,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // HTTP
 import { HttpClientModule } from '@angular/common/http';
 
+// Modal
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 @NgModule({
   declarations: [
     AppComponent,
-    InfoComponent,
     CardComponent,
     UserComponent,
-    InitComponent,
     HeaderComponent,
     CardContainerComponent,
     ForgotPasswordComponent,
@@ -55,7 +54,8 @@ import { HttpClientModule } from '@angular/common/http';
     AngularFirestoreModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ModalModule.forRoot()
   ],
   providers: [
     AuthService,
