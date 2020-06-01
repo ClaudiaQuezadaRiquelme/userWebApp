@@ -2,7 +2,9 @@
 
 <div class="card border-secondary mb-3"
     [style.max-width]=
-        "router.url === '/card-container' ? '80rem' : '20rem'">
+        "router.url === '/card-container' ? '80rem' : '20rem'"
+    [style.background-color]=
+        "router.url === '/card-container' ? '#17a2b8' : 'unset'">
     <div class="card-body">
       <router-outlet></router-outlet>
     </div>
