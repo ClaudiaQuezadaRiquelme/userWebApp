@@ -22,6 +22,22 @@
 
   <!-- Modal Body -->
   <div class="modal-body">
-    This is a modal.
+    <table>
+      <tr>
+        <td><ng-content class="modalImg" select="[modalImg]"></ng-content></td>
+        <td class="modalContent">
+          <ng-content select="[modalName]"></ng-content>
+          <ng-content select="[modalGender]"></ng-content>
+          <ng-content select="[modalAge]"></ng-content>
+          <ng-content select="[modalPhone]"></ng-content>
+          <ng-content select="[modalCell]"></ng-content>
+          <ng-content select="[modalEmail]"></ng-content>
+          <ng-content select="[modalNat]"></ng-content>
+          <ng-content select="[modalCountryCity]"></ng-content>
+          <ng-content select="[modalDirection]"></ng-content>
+        </td>
+      </tr>
+    
+    </table>
   </div>
 </ng-template>

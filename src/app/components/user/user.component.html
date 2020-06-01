@@ -1,1 +1,8 @@
-<p>user works!</p>
+<table *ngIf="authService.userData as user">
+    <tr>
+        <img class="userImg" 
+             src="{{(user.photoURL) ? user.photoURL : '../../../../../assets/User.svg"
+             alt="{{user.displayName}}">
+    </tr>
+    <tr><p class="userName">User</p></tr>
+</table>

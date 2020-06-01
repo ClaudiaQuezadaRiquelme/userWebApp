@@ -3,6 +3,16 @@
         <app-card>
             <img cardImg src="../../../assets/UserImg.svg" alt="somebody img">
             <h5 cardName>{{user.name.last}} {{user.name.first}}</h5>
+            <img modalImg src="{{user.picture.large}}" alt="somebody img">
+            <p modalName>Name: {{user.name.title}} {{user.name.last}} {{user.name.first}}</p>
+            <p modalGender>Gender: {{user.gender}}</p>
+            <p modalAge>Age: {{user.dob.age}}</p>
+            <p modalPhone>Phone: {{user.phone}}</p>
+            <p modalCell>Cell: {{user.cell}}</p>
+            <p modalEmail>Email: {{user.email}}</p>
+            <p modalNat>Nat: {{user.nat}}</p>
+            <p modalCountryCity>Location: {{user.location.city}}, {{user.location.country}}</p>
+            <p modalDirection>Street: {{user.location.street.name}} {{user.location.street.number}}</p>
         </app-card>
     </div>
 </div>

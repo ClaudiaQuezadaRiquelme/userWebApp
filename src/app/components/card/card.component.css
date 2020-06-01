@@ -2,3 +2,8 @@
     flex-grow: 1;
     flex-shrink: 0;
 }
+.modalImg {
+    vertical-align: top;
+}
+.modalContent {
+}

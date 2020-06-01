@@ -1,0 +1,11 @@
+.userImg {
+    width: 60px;
+    height: 60px;
+}
+.userName {
+    width: 60px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: clip;
+    text-align: center;
+}

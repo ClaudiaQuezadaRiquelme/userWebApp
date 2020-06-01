@@ -18,7 +18,6 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 // Services
 import { AuthService } from './services/auth.service';
@@ -43,8 +42,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     SignInComponent,
-    SignUpComponent,
-    DashboardComponent
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
