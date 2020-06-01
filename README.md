@@ -28,6 +28,8 @@ Se utilizó [Bootswatch sketchy](https://bootswatch.com/sketchy/) para la estét
 
 ## Mockup
 
+Mockup desarrollado en Balsamiq.
+
 ![Diseño de la vista para registrarse o autenticarse](https://raw.githubusercontent.com/ClaudiaQuezadaRiquelme/userWebApp/master/src/assets/UserWebAppMockup1.png "Diseño de la vista para registrarse o autenticarse") ![Diseño de la vista donde se encuentran las tarjetas de los usuarios](https://raw.githubusercontent.com/ClaudiaQuezadaRiquelme/userWebApp/master/src/assets/UserWebAppMockup2.png "Diseño de la vista donde se encuentran las tarjetas de los usuarios") ![Diseño de la vista donde se encuentra el detalle del usuario seleccionado](https://raw.githubusercontent.com/ClaudiaQuezadaRiquelme/userWebApp/master/src/assets/UserWebAppMockup3.png "Diseño de la vista donde se encuentra el detalle del usuario seleccionado")
 
 ### Flujo de la App a través del Mockup
