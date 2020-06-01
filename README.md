@@ -1,27 +1,31 @@
 # UserWebApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Despliegue del proyecto [aquí](https://userwebapp-2577a.web.app/).
 
-## Development server
+## Resumen
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+UserWebApp es una single web application que tras registrarse/autenticarse en la página nos muestra un listado de colaboradores extraídos de la API gratuita [randomuser.me](​https://randomuser.me/documentation#howto). Al seleccionar alguna persona del listado, se muestra el detalle en una ficha descriptiva.
 
-## Code scaffolding
+## Firebase
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+La autenticación fue realizada con Firebase Auth, así como también el despliegue del proyecto.
 
-## Build
+## Angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Se utilizó el framework Angular 9, pero se utilizaron algunas herramientas anteriores por encontrar mayor cantidad de documentación. Por dicho motivo se utilizó "@angular/fire": "5.4.2" en lugar de "@angular/fire": "6.0.0".
 
-## Running unit tests
+## Unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Por el momento sólo están disponibles algunas pruebas unitarias en el componente sign-in. Se evaluarán mayores pruebas en próximas iteraciones.
 
-## Running end-to-end tests
+## End-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+No hay disponibles end-to-end tests.
 
-## Further help
+## Flexbox-Responsive
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Se utilizó [Bootswatch sketchy](https://bootswatch.com/sketchy/) para la estética de la aplicación. El diseño se implementó siguiendo el principio Mobile First. Las tarjetas que representan a la información de cada colaborador se acomodan según lo que permite el tamaño de la página. 
+
+## Mockup
+
+![Diseño de la vista para registrarse o autenticarse](./src/app/assets/UserWebAppMockup1.png "Diseño de la vista para registrarse o autenticarse") ![Diseño de la vista donde se encuentran las tarjetas de los usuarios](./src/app/assets/UserWebAppMockup2.png "Diseño de la vista donde se encuentran las tarjetas de los usuarios") ![Diseño de la vista donde se encuentra el detalle del usuario seleccionado](./src/app/assets/UserWebAppMockup3.png "Diseño de la vista donde se encuentra el detalle del usuario seleccionado")
