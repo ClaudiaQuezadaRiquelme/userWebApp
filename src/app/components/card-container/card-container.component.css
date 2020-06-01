@@ -4,3 +4,7 @@
     flex-wrap: wrap;
     color: #17a2b8;
 }
+.modalImg {
+    width: 100%;
+    height: auto;
+}

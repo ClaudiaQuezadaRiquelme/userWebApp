@@ -10,7 +10,7 @@
   <div class="modal-header">
 
   <!-- Modal Title  -->
-    <h4 class="modal-title pull-left">Modal</h4>
+    <h4 class="modal-title pull-left"><ng-content select="[h4ModalName]"></ng-content></h4>
 
   <!-- Close Button  -->
     <button type="button" 
@@ -24,7 +24,7 @@
   <div class="modal-body">
     <table>
       <tr>
-        <td><ng-content class="modalImg" select="[modalImg]"></ng-content></td>
+        <td class="modalImg-container"><ng-content select="[modalImg]"></ng-content></td>
         <td class="modalContent">
           <ng-content select="[modalName]"></ng-content>
           <ng-content select="[modalGender]"></ng-content>

@@ -12,8 +12,9 @@
 .card-img {
     width: 90px;
 }
-.modalImg {
+td {
     vertical-align: top;
 }
-.modalContent {
+.modalImg-container {
+    max-width: 100px;
 }
