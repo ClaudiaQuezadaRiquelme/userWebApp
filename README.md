@@ -82,4 +82,6 @@ Una vez terminado lo anterior, ejecutamos el siguiente comando para visualizar n
 
 El despliegue exitoso nos devuelve la [url](https://userwebapp-2577a.web.app/) con nuestra app.
 
+## Organización de tareas
 
+Se utilizó [Trello](https://trello.com/b/dtDTe5zj/userwebapp) para el manejo de tareas.
